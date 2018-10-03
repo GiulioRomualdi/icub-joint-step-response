@@ -31,6 +31,7 @@ ControlBoards.(WBTConfigRobot.ControlBoardsNames{5}) = {'r_hip_pitch','r_hip_rol
 %ControlBoards.(WBTConfigRobot.ControlBoardsNames{2}) = {'r_ankle_pitch'};
 
 
+
 for n = 1:length(WBTConfigRobot.ControlBoardsNames)
 
     WBTConfigRobot.ControlledJoints       = [WBTConfigRobot.ControlledJoints, ...
@@ -94,3 +95,9 @@ Ports.WRENCH_RIGHT_FOOT  = '/wholeBodyDynamics/right_foot/cartesianEndEffectorWr
 % Ports dimensions. It is necessary to set this variable in case the same
 % port has different dimensions for different robots
 Ports.NECK_POS_PORT_SIZE = 6;
+
+initialJointPosition = [0.0330,   -0.0275,   -0.0110,...
+                        35.5628,   29.9818,    0.1263,   50.0209,...
+                        -35.0794,   29.5698,    0.0604,   49.9934,...
+                        15.5951,    6.7896,   -1.4392,  -29.9488,  -14.4141,  -12.3596,...
+                        15.5951,    6.7951,   -1.4172,  -29.9873,  -14.3317,  -12.2992];
